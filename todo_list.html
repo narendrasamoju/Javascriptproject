@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <style>
+    
+        .container{
+            margin: auto;
+            text-align: center;
+            color:blue;
+            background-image: url("./background.jpeg");
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>todo list</h2>
+        <input type="text" id="write" value=""/>
+        <br><br>
+        <input type="button" id="write2" value="Submit" onclick="addtodolist()"/>
+        <ul id="add"></ul>
+    
+
+    </div>
+    
+    <script>
+        function addtodolist(){
+            var a=document.getElementById("write")
+            var li=document.createElement("li");
+            li.innerHTML=a.value;
+            var ul=document.getElementById("add");
+            ul.appendChild(li)=a.value;
+        
+
+        }
+        
+    </script>
+</body>
+</html>

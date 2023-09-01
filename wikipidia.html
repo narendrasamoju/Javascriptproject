@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikipedia</title>
+    <style>
+        body{
+            background: url(BGimage.jpeg);
+        }
+        .container{
+            margin:auto;
+            color: bisque;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="search">wikipedia search</h2>
+        <input type="text" id="add1" value=""/>
+        <br>
+        <br>
+        <input type="button" id="add2" value="Search" onclick="searchresults()"/>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function searchresults(){
+            var a = document.getElementById("add1");
+            var p = document.getElementById("result");
+            p.innerHTML=a.value;
+        }
+    
+    </script>
+
+</body>
+</html>
